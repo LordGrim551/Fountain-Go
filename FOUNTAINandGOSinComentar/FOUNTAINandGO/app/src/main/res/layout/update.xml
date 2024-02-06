@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4ECEF"
+    android:onClick="changeToMain"
+    tools:ignore="ExtraText"
+    tools:context=".update">
+
+    <ImageView
+        android:id="@+id/circles4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/circle_wallpaper" />
+
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="320dp"
+        android:layout_height="520dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangulo"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline16" />
+
+    <EditText
+        android:id="@+id/updateEmail"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/editNewEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewPass" />
+
+    <EditText
+        android:id="@+id/editNewEmail"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nuevo email"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/modifybutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateEmail" />
+
+    <EditText
+        android:id="@+id/updatePass"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/editNewPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewUser" />
+
+    <EditText
+        android:id="@+id/editNewPass"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nueva contraseña"
+        android:inputType="text"
+        android:textSize="10sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/updateEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updatePass" />
+
+    <EditText
+        android:id="@+id/updateUser"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/editNewUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewSurname" />
+
+    <EditText
+        android:id="@+id/editNewUser"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nuevo usuario"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/updatePass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateUser" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="175dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foto" />
+
+    <Button
+        android:id="@+id/modifybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="modifyValues"
+        android:text="Modificar"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tomainupdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewEmail" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="201dp" />
+
+    <EditText
+        android:id="@+id/updateName"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/editNewName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <EditText
+        android:id="@+id/updateSurname"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/editNewSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNewName" />
+
+    <Button
+        android:id="@+id/tomainupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="changeToMain"
+        android:text="Volver"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifybutton" />
+
+    <EditText
+        android:id="@+id/editNewName"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nuevo nombre"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateSurname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateName" />
+
+    <EditText
+        android:id="@+id/editNewSurname"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nuevo apellido"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateSurname" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="228dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="674dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="194dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

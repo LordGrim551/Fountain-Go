@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8ECEC"
+    tools:context=".FRAGMENTS_USER.EditarInfo_Fragment">
+
+    <ImageView
+        android:id="@+id/circles_change"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/circle_wallpaper" />
+
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangulo"
+        app:layout_constraintTop_toBottomOf="@id/h72"
+        app:layout_constraintBottom_toTopOf="@id/h73"
+        app:layout_constraintStart_toEndOf="@id/v51"
+        app:layout_constraintEnd_toStartOf="@id/v52" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/changeName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/changeSurname"
+        app:layout_constraintTop_toBottomOf="@id/h74"
+        app:layout_constraintStart_toEndOf="@id/v53"
+        app:layout_constraintEnd_toStartOf="@id/v54"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changeNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/regName"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/changeSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/changeUser"
+        app:layout_constraintTop_toBottomOf="@id/changeName"
+        app:layout_constraintStart_toEndOf="@id/v53"
+        app:layout_constraintEnd_toStartOf="@id/v54"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changeSurnameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/regSurname"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/changeUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/changePass"
+        app:layout_constraintTop_toBottomOf="@id/changeSurname"
+        app:layout_constraintStart_toEndOf="@id/v53"
+        app:layout_constraintEnd_toStartOf="@id/v54"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changeUserTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/regUser"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/changePass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/changePass2"
+        app:layout_constraintTop_toBottomOf="@id/changeUser"
+        app:layout_constraintStart_toEndOf="@id/v53"
+        app:layout_constraintEnd_toStartOf="@id/v54"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#B3B3B3"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changePassTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/regPass"
+            android:inputType="textPassword"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/changePass2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/changeEmail"
+        app:layout_constraintTop_toBottomOf="@id/changePass"
+        app:layout_constraintStart_toEndOf="@id/v53"
+        app:layout_constraintEnd_toStartOf="@id/v54"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#B3B3B3"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changePass2Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/regPass2"
+            android:inputType="textPassword"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/changeEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/h78"
+        app:layout_constraintTop_toBottomOf="@id/changePass2"
+        app:layout_constraintStart_toEndOf="@id/v53"
+        app:layout_constraintEnd_toStartOf="@id/v54"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changeEmailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/regEmail"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:dividerColor="#B3B3B3"
+        app:layout_constraintStart_toStartOf="@id/rectangle_5"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@id/h75" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/applyChanges"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/apply"
+        app:layout_constraintStart_toEndOf="@id/v53"
+        app:layout_constraintEnd_toStartOf="@id/v54"
+        app:layout_constraintTop_toBottomOf="@id/h76"
+        app:layout_constraintBottom_toTopOf="@id/h77"
+        style="@style/noBoxFill4" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintStart_toEndOf="@id/v53"
+        app:layout_constraintEnd_toStartOf="@id/v54"
+        app:layout_constraintTop_toBottomOf="@id/h77"
+        app:layout_constraintBottom_toTopOf="@id/h79"
+        style="@style/noBoxFill3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.875" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.105" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.705" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.838" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

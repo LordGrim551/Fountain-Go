@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B8ECEC"
+    tools:context=".SCREENS.RegisterScreen">
+
+    <ImageView
+        android:id="@+id/circles2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/circle_wallpaper" />
+
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangulo"
+        app:layout_constraintTop_toBottomOf="@id/h12"
+        app:layout_constraintBottom_toBottomOf="@id/h18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintHeight_percent="0.83" />
+
+    <TextView
+        android:id="@+id/appNameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appName"
+        app:layout_constraintTop_toBottomOf="@id/h11"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        style="@style/TinyAppNameStyle"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/h13"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintBottom_toTopOf="@id/registerSurname"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:layout_constraintWidth_percent="0.7"
+        style="@style/LoginButtons"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/regName"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/registerName"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintBottom_toTopOf="@id/registerUser"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:layout_constraintWidth_percent="0.7"
+        style="@style/LoginButtons"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/regSurname"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/registerSurname"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintBottom_toTopOf="@id/registerPass"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:layout_constraintWidth_percent="0.7"
+        style="@style/LoginButtons"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/regUser"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/registerUser"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintBottom_toTopOf="@id/registerPass2"
+        app:startIconDrawable="@drawable/ic_key"
+        android:textColorHint="#B3B3B3"
+        app:startIconTint="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:layout_constraintWidth_percent="0.7"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#B3B3B3"
+        style="@style/LoginButtons"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/regPass"
+            android:inputType="textPassword"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerPass2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/registerPass"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintBottom_toTopOf="@id/registerEmail"
+        app:startIconDrawable="@drawable/ic_key"
+        android:textColorHint="#B3B3B3"
+        app:startIconTint="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:layout_constraintWidth_percent="0.7"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#B3B3B3"
+        style="@style/LoginButtons"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/regPass2"
+            android:inputType="textPassword"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/registerPass2"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintBottom_toTopOf="@id/h14"
+        android:textColorHint="#B3B3B3"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:layout_constraintWidth_percent="0.7"
+        style="@style/LoginButtons"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/regEmail"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/regNow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:onClick="insertValues"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintTop_toBottomOf="@id/h14"
+        app:layout_constraintBottom_toTopOf="@id/h500"
+        app:layout_constraintWidth_percent="0.5"
+        style="@style/noBoxFill" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        app:dividerColor="#B3B3B3"
+        app:layout_constraintStart_toStartOf="@id/rectangle_5"
+        app:layout_constraintEnd_toEndOf="@id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@+id/h15"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/alreadyAcc"
+        android:onClick="changeToLogin"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintTop_toBottomOf="@+id/h16"
+        app:layout_constraintWidth_percent="0.8"
+        style="@style/noBoxFill" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/noAccRegisterButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/noAcc"
+        android:onClick="noAccount"
+        app:layout_constraintStart_toEndOf="@id/v5"
+        app:layout_constraintEnd_toStartOf="@id/v6"
+        app:layout_constraintTop_toBottomOf="@+id/h17"
+        app:layout_constraintWidth_percent="0.8"
+        style="@style/noBoxFill" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.704" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.783" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.805" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.869" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

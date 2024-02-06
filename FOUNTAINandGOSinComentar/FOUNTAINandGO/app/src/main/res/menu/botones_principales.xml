@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mapa_buttom"
+        android:icon="@drawable/mapa"
+        android:title="MAPA"
+        />
+    <item
+        android:id="@+id/mail_buttom"
+        android:icon="@drawable/mail"
+        android:title="MENSAJES"
+
+        />
+    <item
+        android:id="@+id/agregar_buttom"
+        android:icon="@drawable/agregar"
+        android:title="AÑADIR"
+        />
+    <item
+        android:id="@+id/favorito_buttom"
+        android:icon="@drawable/favorito"
+        android:title="FAVORITOS"
+        />
+    <item
+        android:id="@+id/perfil_buttom"
+        android:icon="@drawable/perfil"
+        android:title="PERFIL"
+        />
+</menu>

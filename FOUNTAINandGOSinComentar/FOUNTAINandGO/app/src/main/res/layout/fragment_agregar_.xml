@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agregar_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4ECEF">
+
+    <ImageView
+        android:id="@+id/circles2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/circle_wallpaper" />
+
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangulo"
+        app:layout_constraintStart_toEndOf="@id/v55"
+        app:layout_constraintEnd_toStartOf="@id/v56"
+        app:layout_constraintTop_toBottomOf="@id/h80"
+        app:layout_constraintBottom_toTopOf="@id/h81" />
+
+    <View
+        android:id="@+id/pic_place"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/palasfotos"
+        app:layout_constraintTop_toBottomOf="@id/h82"
+        app:layout_constraintBottom_toTopOf="@id/h83"
+        app:layout_constraintStart_toEndOf="@id/v58"
+        app:layout_constraintEnd_toStartOf="@id/v57"
+        app:layout_constraintHeight_percent="0.26"/>
+
+    <!--ImageView
+        android:id="@+id/logo_agregar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/h82"
+        app:layout_constraintBottom_toTopOf="@id/h83"
+        app:layout_constraintEnd_toStartOf="@id/v57"
+        app:layout_constraintStart_toEndOf="@id/v58"
+        app:srcCompat="@drawable/final_logo" /-->
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/pic_place"
+        app:layout_constraintBottom_toBottomOf="@id/pic_place"
+        app:layout_constraintStart_toStartOf="@id/pic_place"
+        app:layout_constraintEnd_toEndOf="@id/pic_place"
+        app:srcCompat="@drawable/camera"
+        app:layout_constraintHeight_percent="0.07" />
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fontInputName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toEndOf="@id/v59"
+        app:layout_constraintEnd_toStartOf="@id/v60"
+        app:layout_constraintTop_toBottomOf="@id/h82"
+        app:layout_constraintBottom_toTopOf="@id/fontInputDir"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fontName"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fontInputDir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toEndOf="@id/v59"
+        app:layout_constraintEnd_toStartOf="@id/v60"
+        app:layout_constraintTop_toBottomOf="@id/fontInputName"
+        app:layout_constraintBottom_toTopOf="@id/fontInputCP"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fontDir"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fontInputCP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toEndOf="@id/v59"
+        app:layout_constraintEnd_toStartOf="@id/v60"
+        app:layout_constraintTop_toBottomOf="@id/fontInputDir"
+        app:layout_constraintBottom_toTopOf="@id/fontInputCity"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fontCP"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fontInputCity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#B3B3B3"
+        app:layout_constraintStart_toEndOf="@id/v59"
+        app:layout_constraintEnd_toStartOf="@id/v60"
+        app:layout_constraintTop_toBottomOf="@id/fontInputCP"
+        app:layout_constraintBottom_toTopOf="@id/h83"
+        app:boxStrokeColor="#B3B3B3"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusBottomEnd="0dp"
+        style="@style/LoginButtons">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fontCity"
+            android:inputType="textPersonName"
+            android:textColor="#B3B3B3"
+            android:fontFamily="@font/kanit"
+            android:textColorHint="#B3B3B3"
+            android:textSize="14sp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/comments_section"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/paloscomments"
+        app:layout_constraintBottom_toTopOf="@id/h85"
+        app:layout_constraintEnd_toStartOf="@id/v60"
+        app:layout_constraintStart_toEndOf="@id/v58"
+        app:layout_constraintTop_toBottomOf="@id/h84" />
+
+    <!--EditText
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/paloscomments"
+        android:gravity="top"
+        android:hint="Comentarios adicionales que desee introducir"
+        android:padding="12dp"
+        android:textColorHint="#00BCD4"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@id/h85"
+        app:layout_constraintEnd_toStartOf="@id/v60"
+        app:layout_constraintStart_toEndOf="@id/v58"
+        app:layout_constraintTop_toBottomOf="@id/h84" /-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendSuggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        app:layout_constraintTop_toBottomOf="@id/h86"
+        app:layout_constraintBottom_toTopOf="@id/h87"
+        app:layout_constraintStart_toEndOf="@id/v58"
+        app:layout_constraintEnd_toStartOf="@id/v60"
+        style="@style/noBoxFill" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v59"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.057" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.875" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.107" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.427" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.753" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.775" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.845" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

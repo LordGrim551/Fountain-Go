@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "383262102242",
+    "project_id": "fountainandgo",
+    "storage_bucket": "fountainandgo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383262102242:android:8cb0f3f0eec62dbb1d44bb",
+        "android_client_info": {
+          "package_name": "com.example.fountainandgo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6KV1apZBTZK5lqg3wzs16OS_aOxSaRP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

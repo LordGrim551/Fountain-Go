@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4ECEF"
+    android:id="@+id/favoritos_screen">
+
+    <ImageView
+        android:id="@+id/circles2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/circle_wallpaper"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="399dp"
+        android:layout_height="417dp"
+        android:background="@drawable/rectangulo"
+        android:elevation="2dp"
+        android:padding="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline28" />
+
+    <LinearLayout
+        android:id="@+id/fillContentShow"
+        android:layout_width="345dp"
+        android:layout_height="374dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/dataTextView_nacc_fav"
+        android:layout_width="349dp"
+        android:layout_height="375dp"
+        android:elevation="8dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fillContentShow"
+        app:layout_constraintEnd_toEndOf="@+id/fillContentShow"
+        app:layout_constraintStart_toStartOf="@+id/fillContentShow"
+        app:layout_constraintTop_toTopOf="@+id/fillContentShow" />
+
+
+    <Button
+        android:id="@+id/showbutton"
+        android:layout_width="415dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="showElements"
+        android:text="MOSTRAR"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline28"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="611dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="96dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

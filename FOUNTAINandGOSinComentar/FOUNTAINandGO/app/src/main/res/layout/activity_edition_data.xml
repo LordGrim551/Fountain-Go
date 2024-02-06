@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4ECEF"
+    android:id="@+id/edition_screen"
+    tools:context=".editionData" >
+
+    <ImageView
+        android:id="@+id/circles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/circle_wallpaper" />
+
+    <View
+        android:id="@+id/rectangle_5"
+        android:layout_width="323dp"
+        android:layout_height="510dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <EditText
+        android:id="@+id/edittexto01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nombre (obligatorio)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_5" />
+
+    <EditText
+        android:id="@+id/edittexto02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@+id/edittexto01" />
+
+    <EditText
+        android:id="@+id/edittexto03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Usuario (Obligatorio)"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edittexto01"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/edittexto04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Contraseña (Obligatorio)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@+id/edittexto05" />
+
+    <EditText
+        android:id="@+id/edittexto05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Confirmar contrasesña"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@+id/edittexto02" />
+
+    <EditText
+        android:id="@+id/edittext06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Correo electrónico"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@+id/edittexto04" />
+
+    <Button
+        android:id="@+id/buttonApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:onClick="applychanges"
+        android:text="APLICAR CAMBIOS"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@+id/edittext06" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:onClick="changeToperfilSincambios"
+        android:text="REGRESAR"
+        android:textColor="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonApply" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

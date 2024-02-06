@@ -1,0 +1,6 @@
+<!-- rounded_corners.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topRightRadius="25dp" android:topLeftRadius="25dp"/> <!-- Ajusta el radio según sea necesario -->
+    <solid android:color="@color/white" /> <!-- Color de fondo del fragmento -->
+    <stroke android:width="2dp" android:color="@android:color/black" />
+</shape>
